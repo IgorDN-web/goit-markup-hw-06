@@ -2,11 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="description"
-      content="Effective Solutions
-  for Your Business"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Effective Solutions for Your Business</title>
     <link
       rel="stylesheet"
@@ -55,6 +51,94 @@
             </li>
           </ul>
         </address>
+
+        <button class="mobile-menu__open js-open-menu" type="button">
+          <svg
+            class="mobile-menu__open-icon"
+            aria-label="mobile-menu-open"
+            width="32"
+            height="22"
+            stroke="var(--color-grey)"
+          >
+            <use href="./images/icons.svg#menu"></use>
+          </svg>
+        </button>
+
+        <div class="mobile-menu__container js-menu-container">
+          <div class="mobile-menu__wrapper">
+            <button class="mobile-menu__close js-close-menu" type="button">
+              <svg
+                class="mobile-menu__close-icon"
+                aria-label="mobile-menu-close"
+                width="8"
+                height="8"
+              >
+                <use href="./images/icons.svg#icon-close-black"></use>
+              </svg>
+            </button>
+            <ul class="mobile-menu__list list">
+              <li class="mobile-menu__item">
+                <a class="mobile-menu__nav current link" href="./index.html"
+                  >Studio</a
+                >
+              </li>
+              <li class="mobile-menu__item">
+                <a class="mobile-menu__nav link" href="">Portfolio</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a class="mobile-menu__nav link" href="">Contacts</a>
+              </li>
+            </ul>
+            <address class="mobile-menu__contacts">
+              <ul class="mobile-menu__contacts-list list">
+                <li class="mobile-menu__contacts-item">
+                  <a
+                    class="mobile-menu__contacts-tel link"
+                    href="tel:+110001111111"
+                    >+11 (000) 111-11-11</a
+                  >
+                </li>
+                <li class="mobile-menu__contacts-item">
+                  <a
+                    class="mobile-menu__contacts-mail link"
+                    href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+            </address>
+            <ul class="mobile-menu__social-list list">
+              <li class="mobile-menu__social-item">
+                <a class="mobile-menu__social-link link" href="">
+                  <svg class="mobile-menu__social-icon" width="16" height="16">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-menu__social-item">
+                <a class="mobile-menu__social-link link" href="">
+                  <svg class="mobile-menu__social-icon" width="16" height="16">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-menu__social-item">
+                <a class="mobile-menu__social-link link" href="">
+                  <svg class="mobile-menu__social-icon" width="16" height="16">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-menu__social-item">
+                <a class="mobile-menu__social-link link" href="">
+                  <svg class="mobile-menu__social-icon" width="16" height="16">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -130,6 +214,7 @@
             <li class="team-dscr">
               <img
                 src="./images/mark-guerrero.jpg"
+                srcset="./images/mark-guerrero-2x.jpg"
                 alt="team-card-1"
                 width="264"
               />
@@ -168,7 +253,12 @@
               </div>
             </li>
             <li class="team-dscr">
-              <img src="./images/tom-ford.jpg" alt="team-card-2" width="264" />
+              <img
+                src="./images/tom-ford.jpg"
+                srcset="./images/tom-ford-2x.jpg"
+                alt="team-card-2"
+                width="264"
+              />
               <div class="card-content">
                 <h3 class="team-card">Tom Ford</h3>
                 <p class="team-card-description">Frontend Developer</p>
@@ -207,6 +297,7 @@
             <li class="team-dscr">
               <img
                 src="./images/camilagarcia.jpg"
+                srcset="./images/camila-garcia-2x.jpg"
                 alt="team-card-3"
                 width="264"
               />
@@ -247,6 +338,7 @@
             <li class="team-dscr">
               <img
                 src="./images/daniel-wilson.jpg"
+                srcset="./images/daniel-wilson-2x.jpg"
                 alt="team-card-4"
                 width="264"
               />
@@ -295,7 +387,12 @@
           <ul class="row">
             <li class="card-row">
               <div class="project_card">
-                <img src="./images/banking-app.jpg" alt="bankapp" width="360" />
+                <img
+                  src="./images/banking-app.jpg"
+                  srcset="./images/banking-app-2x.jpg"
+                  alt="bankapp"
+                  width="360"
+                />
                 <p class="active-item">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -312,6 +409,7 @@
               <div class="project_card">
                 <img
                   src="./images/cashless-payment.jpg"
+                  srcset="./images/cashless-payment-2x.jpg"
                   alt="payment"
                   width="360"
                 />
@@ -331,6 +429,7 @@
               <div class="project_card">
                 <img
                   src="./images/meditation-app.jpg"
+                  srcset="./images/meditation-app-2x.jpg"
                   alt="meditation"
                   width="360"
                 />
@@ -348,7 +447,12 @@
             </li>
             <li class="card-row">
               <div class="project_card">
-                <img src="./images/taxi-service.jpg" alt="taxi" width="360" />
+                <img
+                  src="./images/taxi-service.jpg"
+                  srcset="./images/taxi-service-2x.jpg"
+                  alt="taxi"
+                  width="360"
+                />
                 <p class="active-item">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -365,6 +469,7 @@
               <div class="project_card">
                 <img
                   src="./images/screen-illustrations.jpg"
+                  srcset="./images/screen-illustrations-2x.jpg"
                   alt="illustrations"
                   width="360"
                 />
@@ -384,6 +489,7 @@
               <div class="project_card">
                 <img
                   src="./images/online-courses.jpg"
+                  srcset="./images/online-courses-2x.jpg"
                   alt="courses"
                   width="360"
                 />
